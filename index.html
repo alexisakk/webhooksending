@@ -66,7 +66,7 @@
 
         const input = document.getElementById('messageInput').value; // Get the message from the input field
 
-        const url = `https://script.google.com/macros/s/AKfycbyjGnwYus7eAoQtBPXcwdK82-pJ8N-8Uf2uGE9505k5OpHpj6vwGSKfT8JyBWZIce_V/exec?message=${encodeURIComponent(input)}`;
+       const url = '/.netlify/functions/send-message'; // This is the endpoint for the functio
 
         try {
             const response = await fetch(url, {
